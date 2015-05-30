@@ -24,5 +24,12 @@ $(document).ready(function(){
 		number = "";
 		totaldiv.text("0");
     });
-
+    $("#clear,#clearall").click(function(){
+		number = "";
+		totaldiv.text("0");
+		if ($(this).attr("id") === "clearall") {
+			newnumber = "";
+		}
+    });
+    
 });
